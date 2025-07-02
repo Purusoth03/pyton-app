@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3‑Tier Python App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        h1 { color: #333; }
+        ul { list-style: none; padding: 0;}
+        li { padding: .5rem 0; }
+    </style>
+</head>
+<body>
+    <h1>Items</h1>
+    <ul>
+        {% for item in items %}
+        <li>{{ item.id }} — {{ item.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
